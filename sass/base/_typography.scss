@@ -4,3 +4,20 @@ body {
     line-height: 1.6;
     color: var(--color-grey-dark-2);
 }
+
+.header {
+    font-size: 1.4rem;
+}
+
+.search {
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
+.user-nav {
+    &__notification {
+        font-size: .8rem;
+    }
+}
