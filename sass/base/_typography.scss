@@ -38,3 +38,38 @@ body {
     text-align: center;
     color: var(--color-grey-light-4);
 }
+
+.overview {
+    &__heading {
+        font-size: 3.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__location {
+        font-size: 2rem;
+
+    }
+
+    &__rating {
+        color: var(--color-white-1);
+
+    }
+
+    &__rating-average {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    &__rating-count {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    &-inline {
+        font-size: inherit;
+    }
+}

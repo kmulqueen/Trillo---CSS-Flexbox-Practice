@@ -1,15 +1,22 @@
 .overview {
     display: flex;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    align-items: center;
 
-
-    &__heading {}
+    &__heading {
+        padding: 1.5rem 3rem;
+    }
 
 
     &__stars {
         margin-right: auto;
+        display: flex;
     }
 
-    &__location {}
+    &__location {
+        display: flex;
+        align-items: center;
+    }
 
     &__icon-star,
     &__icon-location {
@@ -18,9 +25,21 @@
         fill: var(--color-primary);
     }
 
-    &__rating {}
+    &__rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        align-self: stretch;
+        padding: 0 3rem;
 
-    &__rating-average {}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__rating-average {
+        margin-bottom: -3px;
+    }
 
     &__rating-count {}
 }
