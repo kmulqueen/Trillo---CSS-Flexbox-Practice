@@ -5,6 +5,12 @@ body {
     color: var(--color-grey-dark-2);
 }
 
+.btn {
+    &-inline {
+        font-size: inherit;
+    }
+}
+
 .header {
     font-size: 1.4rem;
 }
@@ -91,8 +97,15 @@ body {
     }
 }
 
-.btn {
-    &-inline {
-        font-size: inherit;
+.cta {
+    &__text {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
     }
+}
+
+.btn {
+    color: var(--color-white-1);
+    text-transform: uppercase;
 }
