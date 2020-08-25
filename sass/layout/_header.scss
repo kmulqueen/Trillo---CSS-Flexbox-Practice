@@ -6,4 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mq-max-width(500px) {
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }
 }

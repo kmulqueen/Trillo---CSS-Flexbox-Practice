@@ -5,6 +5,10 @@
 
     &__heading {
         padding: 1.5rem 3rem;
+
+        @include device(phone) {
+            padding: 1.25rem 2rem;
+        }
     }
 
 
@@ -23,6 +27,11 @@
         width: 3.5rem;
         height: 2.5rem;
         fill: var(--color-primary);
+
+        @include device(phone) {
+            width: 2.8rem;
+            height: 2rem;
+        }
     }
 
     &__rating {
@@ -35,6 +44,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include device(phone) {
+            padding: 0 1rem;
+            margin: 0;
+        }
     }
 
     &__rating-average {

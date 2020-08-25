@@ -6,6 +6,16 @@
     position: relative;
     overflow: hidden;
 
+    @include device(tab-port) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    @include device(phone) {
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
     &::before {
         content: "\201C";
         position: absolute;
@@ -22,6 +32,10 @@
         margin-bottom: 3rem;
         z-index: 2;
         position: relative;
+
+        @include device(tab-port) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__user {

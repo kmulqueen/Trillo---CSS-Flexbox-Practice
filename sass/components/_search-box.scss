@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: center;
 
+    @include mq-max-width(500px) {
+        order: 1;
+        flex: 0 0 100%;
+    }
+
     &__input {
         background-color: var(--color-grey-light-2);
         color: inherit;

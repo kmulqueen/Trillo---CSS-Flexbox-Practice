@@ -3,6 +3,14 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--border-thin);
+
+    @include device(tab-port) {
+        padding: 3rem;
+    }
+
+    @include device(phone) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -11,6 +19,10 @@
     box-shadow: var(--shadow-light);
     padding: 2.15em;
     margin-right: 3.25em;
+
+    @include device(phone) {
+        margin: 0 0 3rem;
+    }
 }
 
 .user-reviews {

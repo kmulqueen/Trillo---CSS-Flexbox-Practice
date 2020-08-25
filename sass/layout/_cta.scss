@@ -1,6 +1,10 @@
 .cta {
-    padding: 3rem;
+    padding: 3rem 0;
     text-align: center;
+
+    @include device(tab-port) {
+        padding: 2rem 0;
+    }
 
     &__text {
         margin-bottom: 2.5rem;

@@ -1,3 +1,7 @@
 .legal {
     padding: 2.5rem;
+
+    @include device(tab-port) {
+        display: none;
+    }
 }
